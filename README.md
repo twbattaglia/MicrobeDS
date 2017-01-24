@@ -1,6 +1,7 @@
 # Microbiome datasets (MDS)
-A repository for large-scale microbiome datasets.
-[![Build Status](https://travis-ci.org/twbattaglia/MicrobeDS.svg?branch=master)](https://travis-ci.org/twbattaglia/MicrobeDS)
+#### A repository for large-scale microbiome datasets.
+[![Build Status](https://travis-ci.org/twbattaglia/MicrobeDS.svg?branch=master)](https://travis-ci.org/twbattaglia/MicrobeDS)  
+  
 
 ### Install
 ```R
