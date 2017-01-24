@@ -1,14 +1,14 @@
-Package: MDS
-Title: Microbiome Datasets (MDS)
+Package: MicrobeDS
+Title: Microbiome Datasets
 Version: 0.0.1
 Authors@R: c(
     person("Tom", "Battaglia", , "tb1280@nyu.edu", c("aut", "cre"))
     )
-Description: A repository for large-scale microbiome datasets formatting for phyloseq.
+Description: A repository for large-scale microbiome datasets formatted for phyloseq.
 Depends:
     R (>= 2.10)
 License: CC0
 LazyData: true
-URL: http://github.com/twbattaglia/MDS
-BugReports: http://github.com/twbattaglia/MDS/issues
+URL: http://github.com/twbattaglia/MicrobeDS
+BugReports: http://github.com/twbattaglia/MicrobeDS/issues
 RoxygenNote: 5.0.1
