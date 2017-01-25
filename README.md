@@ -1,4 +1,4 @@
-# Microbiome datasets (MDS)
+# Microbiome datasets
 #### A repository for large-scale microbiome datasets.
 [![Build Status](https://travis-ci.org/twbattaglia/MicrobeDS.svg?branch=master)](https://travis-ci.org/twbattaglia/MicrobeDS)  
   
@@ -18,12 +18,15 @@ nsamples(HMPv35) # 4743
 ### Datasets
 This package contains datasets provided by large-scale microbiome studies. Each dataset is formatted for use with phyloseq. (https://joey711.github.io/phyloseq/)
 
-* `HMPv13`: 16S rRNA V1-V3 amplicon microbiome data within a phyloseq object. Includes OTU table, taxonomy table, sample mapping file, representative tree file and representative sequences.
+* `HMPv13`: 16S rRNA V1-V3 amplicon microbiome data within a phyloseq object. Includes OTU table, taxonomy table, sample mapping file, representative tree file and representative sequences.  
   (Source: http://www.hmpdacc.org/HMQCP/)
 
-* `HMPv35`: 16S rRNA V3-V5 amplicon microbiome data within a phyloseq object. Includes OTU table, taxonomy table, sample mapping file, representative tree file and representative sequences.
+* `HMPv35`: 16S rRNA V3-V5 amplicon microbiome data within a phyloseq object. Includes OTU table, taxonomy table, sample mapping file, representative tree file and representative sequences.  
   (Source: http://www.hmpdacc.org/HMQCP/)
 
-* `MovingPictures`: 16S rRNA amplicon microbiome data within a phyloseq object. Includes OTU table, taxonomy table, sample mapping file and representative tree file.
+* `MovingPictures`: 16S rRNA amplicon microbiome data within a phyloseq object. Includes OTU table, taxonomy table, sample mapping file and representative tree file.  
   (Source: https://qiita.ucsd.edu/study/description/550)
+  
+* `RISK_CCFA`: 16S rRNA amplicon microbiome data within a phyloseq object. Includes OTU table, taxonomy table, sample mapping file and representative tree file.  
+  (Source: https://qiita.ucsd.edu/study/description/1939)
   
