@@ -3,16 +3,19 @@
 \docType{data}
 \name{HMPv35}
 \alias{HMPv35}
-\title{HMP 16S rRNA data from V3-V5}
+\title{Human Microbiome Project (HMP) V3-V5 amplicon sequencing}
 \format{An object of class \code{"phyloseq"}.}
+\source{
+https://qiita.ucsd.edu/study/description/1928
+}
 \usage{
 data('HMPv35')
 }
 \description{
-The Human Microbiome Project (HMP), funded as an initiative of the NIH Roadmap for Biomedical Research (http://nihroadmap.nih.gov), is a multi-component community resource. The goals of the HMP are: (1) to take advantage of new, high-throughput technologies to characterize the human microbiome more fully by studying samples from multiple body sites from each of at least 250 “normal” volunteers; (2) to determine whether there are associations between changes in the microbiome and health/disease by studying several different medical conditions; and (3) to provide both a standardized data resource and new technological approaches to enable such studies to be undertaken broadly in the scientific community. The ethical, legal, and social implications of such research are being systematically studied as well. The ultimate objective of the HMP is to demonstrate that there are opportunities to improve human health through monitoring or manipulation of the human microbiome. The history and implementation of this new program are described here.
+This HMP production phase represents pyrosequencing of 16S rRNA genes amplified from multiple body sites across hundreds of human subjects. There are two time points represented for a subset of these subjects. Using default protocol v4.2., data for the 16S window spanning V3-V5 was generated for all samples, with a second 16S window spanning V1-V3 generated for a majority of the samples. 16S rRNA sequencing is being used to characterize the complexity of microbial communities at individual body sites, and to determine whether there is a core microbiome at each site. Several body sites will be studied, including the gastrointestinal and female urogenital tracts, oral cavity, nasal and pharyngeal tract, and skin.
 }
 \details{
-Closed-reference OTU-picking with UCLUST (97\% identity)
+Closed-reference OTU-picking with SortMeRNA (97 percent identity)
 }
 \references{
 The NIH HMP Working Group et al. (2009) Genome Res 19(12): 2317–2323.

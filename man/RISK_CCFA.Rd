@@ -3,16 +3,19 @@
 \docType{data}
 \name{RISK_CCFA}
 \alias{RISK_CCFA}
-\title{The Treatment-Naive Microbiome in New-Onset Crohn s Disease (Qiita-1939)}
+\title{The Treatment-Naive Microbiome in New-Onset Crohn's Disease}
 \format{An object of class \code{"phyloseq"}.}
+\source{
+https://qiita.ucsd.edu/study/description/1939
+}
 \usage{
 data('RISK_CCFA')
 }
 \description{
-Understanding the normal temporal variation in the human microbiome is critical to developing treatments for putative microbiome-related afflictions such as obesity, Crohn's disease, inflammatory bowel disease and malnutrition. Sequencing and computational technologies, however, have been a limiting factor in performing dense time series analysis of the human microbiome. Here, we present the largest human microbiota time series analysis to date, covering two individuals at four body sites over 396 timepoints.
+Inflammatory bowel diseases (IBDs), including Crohn's disease (CD), are genetically linked to host pathways that implicate an underlying role for aberrant immune responses to intestinal microbiota. However, patterns of gut microbiome dysbiosis in IBD patients are inconsistent among published studies. Using samples from multiple gastrointestinal locations collected prior to treatment in new-onset cases, we studied the microbiome in the largest pediatric CD cohort to date. An axis defined by an increased abundance in bacteria which include Enterobacteriaceae, Pasteurellacaea, Veillonellaceae, and Fusobacteriaceae, and decreased abundance in Erysipelotrichales, Bacteroidales, and Clostridiales, correlates strongly with disease status. Microbiome comparison between CD patients with and without antibiotic exposure indicates that antibiotic use amplifies the microbial dysbiosis associated with CD. Comparing the microbial signatures between the ileum, the rectum, and fecal samples indicates that at this early stage of disease, assessing the rectal mucosal-associated microbiome offers unique potential for convenient and early diagnosis of CD.
 }
 \details{
-Closed-reference OTU-picking with SortMeRNA (97\% identity)
+Closed-reference OTU-picking with SortMeRNA (97 percent identity)
 }
 \references{
 Gevers et al. (2014) Cell Host Microbe. 2014 Mar 12;15(3):382-92.
