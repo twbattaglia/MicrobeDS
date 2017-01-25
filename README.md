@@ -71,3 +71,15 @@ This package contains datasets provided by large-scale microbiome studies. Each 
 **Type:** OTU-table, Sample metadata, Representative Tree  
 **Abstract:** Inflammatory bowel diseases (IBDs), including Crohn's disease (CD), are genetically linked to host pathways that implicate an underlying role for aberrant immune responses to intestinal microbiota. However, patterns of gut microbiome dysbiosis in IBD patients are inconsistent among published studies. Using samples from multiple gastrointestinal locations collected prior to treatment in new-onset cases, we studied the microbiome in the largest pediatric CD cohort to date. An axis defined by an increased abundance in bacteria which include Enterobacteriaceae, Pasteurellacaea, Veillonellaceae, and Fusobacteriaceae, and decreased abundance in Erysipelotrichales, Bacteroidales, and Clostridiales, correlates strongly with disease status. Microbiome comparison between CD patients with and without antibiotic exposure indicates that antibiotic use amplifies the microbial dysbiosis associated with CD. Comparing the microbial signatures between the ileum, the rectum, and fecal samples indicates that at this early stage of disease, assessing the rectal mucosal-associated microbiome offers unique potential for convenient and early diagnosis of CD.  
 
+
+----
+
+### `TwinsUK`  
+**Description:** Genetic Determinants of the Gut Microbiome in UK Twins    
+**Number of samples:** 1024    
+**Data source:** https://qiita.ucsd.edu/study/description/2014  
+**Study:** https://www.ncbi.nlm.nih.gov/pubmed/25417156       
+**Processing** QIIME 1.9.1, SortMeRNA, Closed-reference OTU-picking at 97% identity   
+**Type:** OTU-table, Sample metadata, Representative Tree  
+**Abstract:** Host genetics and the gut microbiome can both influence host metabolic phenotypes. However, whether host genetic variation shapes the gut microbiome and interacts with it to affect host phenotype is unclear. Here, we addressed this question by comparing microbiotas across more than 1,000 fecal samples obtained from members of the TwinsUK population, including 416 twin-pairs. We identified a variety of microbial taxa whose abundances were influenced by host genetics. The most heritable taxon, the family Christensenellaceae, formed a co-occurrence network with other heritable Bacteria and with methanogenic Archaea, and was enriched in individuals with low BMI. Addition of Christensenella minuta to an obese donor fecal microbiome resulted in reduced weight gain and an altered fecal microbiota in recipient germfree mice. Our findings indicate that host genetics influence the composition of the human gut microbiome and can do so in ways that impact host metabolism.  
+
