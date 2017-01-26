@@ -83,3 +83,16 @@ This package contains datasets provided by large-scale microbiome studies. Each 
 **Type:** OTU-table, Sample metadata, Representative Tree  
 **Abstract:** Host genetics and the gut microbiome can both influence host metabolic phenotypes. However, whether host genetic variation shapes the gut microbiome and interacts with it to affect host phenotype is unclear. Here, we addressed this question by comparing microbiotas across more than 1,000 fecal samples obtained from members of the TwinsUK population, including 416 twin-pairs. We identified a variety of microbial taxa whose abundances were influenced by host genetics. The most heritable taxon, the family Christensenellaceae, formed a co-occurrence network with other heritable Bacteria and with methanogenic Archaea, and was enriched in individuals with low BMI. Addition of Christensenella minuta to an obese donor fecal microbiome resulted in reduced weight gain and an altered fecal microbiota in recipient germfree mice. Our findings indicate that host genetics influence the composition of the human gut microbiome and can do so in ways that impact host metabolism.  
 
+
+----
+
+### `qa10394`  
+**Description:** Effects of preservation and storage conditions on the fecal microbiome   
+**Number of samples:** 1522    
+**Data source:** https://qiita.ucsd.edu/study/description/10394  
+**Additional source:** http://www.ebi.ac.uk/ena/data/view/PRJEB13595    
+**Study:** http://msystems.asm.org/content/1/3/e00021-16         
+**Processing** QIIME 1.9.1, SortMeRNA, Closed-reference OTU-picking at 97% identity   
+**Type:** OTU-table, Sample metadata, Representative Tree  
+**Abstract:** Microbiome studies using fecal samples have allowed us to discover a lot about human health, animal evolution, and basic host-microbe interactions. In most studies, the workflow of conducting a microbiome study involves collecting and stabilizing a sample until it can be processed in a laboratory so that the community experiences little to no change until analysis. One widely used method is freezing at -20C or -80C. However, in scenarios were freezing is not a viable option, an alternative preservation method must used, but the effectiveness of commonly used preservatives is not well understood. To better understand the effects of different storage preservatives and storage conditions on the microbial community of fecal samples, we exposed human and canine fecal samples to a variety of commonly used preservation methods including freezing, using ethanol, RNALater, Omni-gene gut, and FTA cards, and a range of temperature conditions.  
+

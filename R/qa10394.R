@@ -1,0 +1,11 @@
+#' @title Effects of preservation and storage conditions on the fecal microbiome
+#' @details Closed-reference OTU-picking with SortMeRNA (97 percent identity)
+#' @description Microbiome studies using fecal samples have allowed us to discover a lot about human health, animal evolution, and basic host-microbe interactions. In most studies, the workflow of conducting a microbiome study involves collecting and stabilizing a sample until it can be processed in a laboratory so that the community experiences little to no change until analysis. One widely used method is freezing at -20C or -80C. However, in scenarios were freezing is not a viable option, an alternative preservation method must used, but the effectiveness of commonly used preservatives is not well understood. To better understand the effects of different storage preservatives and storage conditions on the microbial community of fecal samples, we exposed human and canine fecal samples to a variety of commonly used preservation methods including freezing, using ethanol, RNALater, Omni-gene gut, and FTA cards, and a range of temperature conditions.
+#' @usage data('qa10394')
+#' @docType data
+#' @source https://qiita.ucsd.edu/study/description/10394
+#' @format An object of class \code{"phyloseq"}.
+#' @keywords datasets
+#' @references Song SJ et al. mSystems May 2016, 1 (3) e00021-16
+#' (\href{http://msystems.asm.org/content/1/3/e00021-16}{mSystems})
+"qa10394"
