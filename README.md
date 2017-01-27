@@ -48,6 +48,20 @@ This package contains datasets provided by large-scale microbiome studies. Each 
 
 ----
 
+
+### `AmericanGut`  
+**Description:** American Gut Project (30-06-2016)  
+**Number of samples:** 10885      
+**Data source:** ftp://ftp.microbio.me/AmericanGut/latest/    
+**Additional source:** http://www.ebi.ac.uk/ena/data/view/PRJEB11419       
+**Additional source:** https://qiita.ucsd.edu/study/description/10317    
+**Study:** https://www.ncbi.nlm.nih.gov/pubmed/26530830            
+**Processing** The sequences were trimmed to 100 nucleotides. QIIME 1.9.1, SortMeRNA, Closed-reference OTU-picking at 97% identity.  
+**Type:** OTU-table, Sample metadata, Representative Tree  
+**Abstract:** The American Gut project is the largest crowdsourced citizen science project to date. Fecal, oral, skin, and other body site samples collected from thousands of participants represent the largest human microbiome cohort in existence. Detailed health and lifestyle and diet data associated with each sample is enabling us to deeply examine associations between the human microbiome and factors such as diet (from vegan to near carnivore and everything in between), season, amount of sleep, and disease states such as IBD, diabetes, or autism spectrum disorder-as well as many other factors not listed here. The American Gut project also encompasses the British Gut and Australian Gut projects, widening the cohort beyond North America. As the project continues to grow, we will be able to identify significant associations that would not be possible with smaller, geographically and health/disease status-limited cohorts. 
+
+----
+
 ### `MovingPictures`  
 **Description:** Time series of the human microbiome   
 **Number of samples:** 1967  
