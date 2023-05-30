@@ -4,7 +4,9 @@
 \name{TwinsUK}
 \alias{TwinsUK}
 \title{Genetic Determinants of the Gut Microbiome in UK Twins}
-\format{An object of class \code{"phyloseq"}.}
+\format{
+An object of class \code{"phyloseq"}.
+}
 \source{
 https://qiita.ucsd.edu/study/description/2014
 }
@@ -22,4 +24,3 @@ Goodrich et al. (2014) Cell. Nov 6;159(4):789-99
 (\href{https://www.ncbi.nlm.nih.gov/pubmed/25417156}{PubMed})
 }
 \keyword{datasets}
-

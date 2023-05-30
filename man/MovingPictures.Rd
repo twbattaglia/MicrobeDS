@@ -4,7 +4,9 @@
 \name{MovingPictures}
 \alias{MovingPictures}
 \title{Moving pictures of the human microbiome (Qiita-550)}
-\format{An object of class \code{"phyloseq"}.}
+\format{
+An object of class \code{"phyloseq"}.
+}
 \source{
 https://qiita.ucsd.edu/study/description/550
 }
@@ -22,4 +24,3 @@ Caporaso et al. (2009) Genome Biol. 2011;12(5):R50.
 (\href{https://www.ncbi.nlm.nih.gov/pubmed/21624126}{PubMed})
 }
 \keyword{datasets}
-

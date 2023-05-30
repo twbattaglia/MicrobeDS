@@ -4,7 +4,9 @@
 \name{HMPv13}
 \alias{HMPv13}
 \title{Human Microbiome Project (HMP) V1-V3 amplicon sequencing}
-\format{An object of class \code{"phyloseq"}.}
+\format{
+An object of class \code{"phyloseq"}.
+}
 \source{
 https://qiita.ucsd.edu/study/description/1927
 }
@@ -22,4 +24,3 @@ The NIH HMP Working Group et al. (2009) Genome Res 19(12): 2317–2323.
 (\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2792171}{PubMed})
 }
 \keyword{datasets}
-

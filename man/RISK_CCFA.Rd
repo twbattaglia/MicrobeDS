@@ -4,7 +4,9 @@
 \name{RISK_CCFA}
 \alias{RISK_CCFA}
 \title{The Treatment-Naive Microbiome in New-Onset Crohn's Disease}
-\format{An object of class \code{"phyloseq"}.}
+\format{
+An object of class \code{"phyloseq"}.
+}
 \source{
 https://qiita.ucsd.edu/study/description/1939
 }
@@ -22,4 +24,3 @@ Gevers et al. (2014) Cell Host Microbe. 2014 Mar 12;15(3):382-92.
 (\href{https://www.ncbi.nlm.nih.gov/pubmed/21624126}{PubMed})
 }
 \keyword{datasets}
-

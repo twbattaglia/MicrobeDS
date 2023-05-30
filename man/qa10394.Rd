@@ -4,7 +4,9 @@
 \name{qa10394}
 \alias{qa10394}
 \title{Effects of preservation and storage conditions on the fecal microbiome}
-\format{An object of class \code{"phyloseq"}.}
+\format{
+An object of class \code{"phyloseq"}.
+}
 \source{
 https://qiita.ucsd.edu/study/description/10394
 }
@@ -22,4 +24,3 @@ Song SJ et al. mSystems May 2016, 1 (3) e00021-16
 (\href{http://msystems.asm.org/content/1/3/e00021-16}{mSystems})
 }
 \keyword{datasets}
-

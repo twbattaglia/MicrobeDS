@@ -5,7 +5,9 @@
 
 ### Install
 ```R
-devtools::install_github("twbattaglia/MicrobeDS")
+install.packages("remotes")
+
+remotes::install_github("twbattaglia/MicrobeDS")
 ```
 
 ### Usage
@@ -25,6 +27,84 @@ sample_data(HMPv35)
 
 ### Datasets
 This package contains datasets provided by large-scale microbiome studies. Each dataset is formatted for use with phyloseq. (https://joey711.github.io/phyloseq/).  
+
+### `TCGA`  
+**Description:** The Cancer Genome Atlas (TCGA)      
+**Number of samples:** 17625   
+**Data source:** ftp://ftp.microbio.me/pub/cancer_microbiome_analysis  
+**Study:** https://pubmed.ncbi.nlm.nih.gov/32214244/  
+**Processing** Unmapped reads profiled using Kraken2 (un-normalized)  
+**Type:** OTU-table, Sample metadata   
+**Abstract:** Systematic characterization of the cancer microbiome provides a unique opportunity to develop cancer diagnostics that exploit non-human, microbial-derived molecules in a major human disease. Based on recent studies showing significant microbial contributions in select cancer types1–10, we re-examined treatment-naïve whole genome and whole transcriptome sequencing studies (n=18,116 samples) from 33 cancer types in The Cancer Genome Atlas11 (TCGA) for microbial reads, and found unique microbial signatures in tissue and blood within and between most major cancer types. 
+
+#### Taxonomy
+```
+# Taxonomy contains only Kingdom & Genus level 
+# due to missing intermediate taxonomy annotations
+tax_table(TCGA) %>% 
+ as.data.frame() %>% 
+ head()
+```
+
+#### List of contaminants 
+```
+data("TCGA.contaminants")
+head(TCGA.contaminants)
+
+TCGA.filtered = TCGA %>% 
+  subset_taxa(!(Genus %in% TCGA.contaminants$Genus))
+
+```
+
+#### Normalize & remove batch effects
+```
+library(microbiome)
+library(edgeR)
+library(limma)
+library(snm)
+
+# Normalized (will take a long time)
+covDesignNorm <- model.matrix(~0 + sample_type +
+                              data_submitting_center_label +
+                              platform +
+                              experimental_strategy +
+                              tissue_source_site_label +
+                              portion_is_ffpe,
+                              data = meta(TCGA))
+colnames(covDesignNorm) <- gsub('([[:punct:]])|\\s+','',colnames(covDesignNorm))
+dge <- DGEList(counts = abundances(TCGA))
+keep <- filterByExpr(dge, covDesignNorm)
+dge <- dge[keep, keep.lib.sizes = FALSE]
+dge <- calcNormFactors(dge, method = "TMM")
+vdge <- voom(dge, design = covDesignNorm, plot = TRUE, save.plot = TRUE, normalize.method="none")
+
+# Remove batch effects (runs long)
+bio.var.sample.type <- model.matrix(~sample_type, data = meta(TCGA))
+adj.var <- model.matrix(~data_submitting_center_label +
+                        platform +
+                        experimental_strategy +
+                        tissue_source_site_label +
+                        portion_is_ffpe,
+                        data = meta(TCGA))
+colnames(bio.var.sample.type) <- gsub('([[:punct:]])|\\s+','',colnames(bio.var.sample.type))
+colnames(adj.var) <- gsub('([[:punct:]])|\\s+','',colnames(adj.var))
+voom.snm <- snm(raw.dat = vdge$E,
+                bio.var = bio.var.sample.type,
+                adj.var = adj.var,
+                rm.adj = TRUE,
+                verbose = TRUE,
+                diagnose = TRUE)
+voom.snm.data = voom.snm$norm.dat
+colnames(voom.snm.data) = colnames(vdge$E)
+
+# Create phyloseq with updated abundance
+TCGA.snm = TCGA
+otu_table(TCGA.snm) = otu_table(voom.snm.data, taxa_are_rows = T)
+
+```
+
+
+----
 
 ### `HMPv13`  
 **Description:** Human Microbiome Project (HMP) V1-V3 amplicon      
