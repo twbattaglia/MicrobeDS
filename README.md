@@ -40,7 +40,15 @@ This package contains datasets provided by large-scale microbiome studies. Each 
 #### Genus-level mapped counts
 ```
 data(Hartwig)
+
+# Check number of samples
+nsamples(Hartwig)
+
+# Check sample metadata
+ntaxa(Hartwig)
 ```
+
+----
 
 ### `TCGA`  
 **Description:** The Cancer Genome Atlas (TCGA)      
