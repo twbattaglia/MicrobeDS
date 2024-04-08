@@ -33,3 +33,5 @@ vignettes/*.pdf
 *.knit.md
 .Rproj.user
 testing.R
+*.DS_Store
+data-raw/Hartwig/Export.R

@@ -28,6 +28,20 @@ sample_data(HMPv35)
 ### Datasets
 This package contains datasets provided by large-scale microbiome studies. Each dataset is formatted for use with phyloseq. (https://joey711.github.io/phyloseq/).  
 
+### `Hartwig`  
+**Description:** Hartwig Medical Foundation (HMF)      
+**Number of samples:** 3574 (4115 before clinical and lowly abundant filtering)   
+**Data source:**  
+**Study:** https://doi.org/10.1016/j.cell.2024.03.021  
+**Processing** Unmapped reads from metastatic tumors profiled with PathSeq/Kraken2.  
+**Type:** OTU-table, Sample metadata   
+**Abstract:** Microbial communities are resident to multiple niches of the human body and are important modulators of the host immune system and responses to anticancer therapies. Recent studies have shown that complex microbial communities are present within primary tumors. To investigate the presence and relevance of the microbiome in metastases, we integrated mapping and assembly-based metagenomics, genomics, transcriptomics, and clinical data of 4,160 metastatic tumor biopsies. We identified organ-specific tropisms of microbes, enrichments of anaerobic bacteria in hypoxic tumors, associations between microbial diversity and tumor-infiltrating neutrophils, and the association of Fusobacterium with resistance to immune checkpoint blockade (ICB) in lung cancer. Furthermore, longitudinal tumor sampling revealed temporal evolution of the microbial communities and identified bacteria depleted upon ICB. Together, we generated a pan-cancer resource of the metastatic tumor microbiome which may contribute to advancing treatment strategies.
+
+#### Genus-level mapped counts
+```
+data(hartwig)
+```
+
 ### `TCGA`  
 **Description:** The Cancer Genome Atlas (TCGA)      
 **Number of samples:** 17625   
