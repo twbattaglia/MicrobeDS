@@ -39,7 +39,7 @@ This package contains datasets provided by large-scale microbiome studies. Each 
 
 #### Genus-level mapped counts
 ```
-data(hartwig)
+data(Hartwig)
 ```
 
 ### `TCGA`  
